@@ -10,14 +10,17 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- 自动扫描控制器 -->
-    <context:component-scan base-package="com.qzb"/>
-    <!-- 视图渲染 -->
-    <bean id="internalResourceViewResolver"
-          class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="view/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
+    <!--&lt;!&ndash; 自动扫描控制器 &ndash;&gt;-->
+    <!--<context:component-scan base-package="com.qzb"/>-->
+    <!--&lt;!&ndash; 视图渲染 &ndash;&gt;-->
+    <!--<bean id="internalResourceViewResolver"-->
+          <!--class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+        <!--<property name="prefix" value="view/"/>-->
+        <!--<property name="suffix" value=".jsp"/>-->
+    <!--</bean>-->
+
+
+
     <!-- 控制器映射器和控制器适配器 -->
     <mvc:annotation-driven></mvc:annotation-driven>
     <!--&lt;!&ndash; 静态资源映射器 &ndash;&gt;-->
